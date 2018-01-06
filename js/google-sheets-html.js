@@ -15,8 +15,8 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1y8QRGUT0bb0Wx6lAHbMjNxU7Zs96WDJE9SXRiuQQfJc&output=html&usp=sharing');
-    query.setQuery('SELECT A, B, C, D label A "Duration", B "Song", C "Requested By", D "URL"');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1EPQnj8DJNOsz_L0arsrgaGhF9fVw9tBQqYFXsdmlKUo&output=html&usp=sharing');
+    query.setQuery('SELECT B, D, E, F, G, H, I, J label B "Team Name", D "Flight", E "Round", F "First Main Point", G "Second Main Point", H "Third Main Point", I "Feedback", J"Do you think you won or lost?" where Debate Detective (Responses) A:J ='"&A1&"'');
     query.send(handleQueryResponse);
 }
 
